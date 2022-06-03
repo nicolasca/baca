@@ -3,13 +3,14 @@ import React from "react";
 import { Client } from "boardgame.io/react";
 
 import { Local, SocketIO } from "boardgame.io/multiplayer";
-import { TicTacToe } from "../../game/Game";
-import TicTacToeBoard from "./board.component";
+import { Baca } from "../../game/Game";
+import BacaBoard from "./board.component";
 
-const TicTacToeClient = Client({
-  game: TicTacToe,
-  board: TicTacToeBoard,
+const BacaClient = Client({
+  game: Baca,
+  board: BacaBoard,
   debug: false,
+  numPlayers: 2,
   multiplayer: SocketIO({ server: "localhost:8000" }),
 });
 
@@ -32,7 +33,7 @@ class App extends React.Component {
     }
     return (
       <div>
-        <TicTacToeClient playerID={this.state.playerID} />
+        <BacaClient playerID={this.state.playerID} />
       </div>
     );
   }

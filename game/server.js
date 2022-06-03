@@ -7,11 +7,11 @@
  */
 
 import { Server, Origins } from "boardgame.io/server";
-import { TicTacToe } from "./Game";
+import { Baca } from "./Game";
 
 const PORT = process.env.PORT || 8000;
 const server = Server({
-  games: [TicTacToe],
+  games: [Baca],
   origins: [Origins.LOCALHOST],
 });
 server.run(PORT, () => {
