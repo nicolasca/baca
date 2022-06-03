@@ -16,10 +16,25 @@ const imagesByGroup = {
   ],
   Belloreks: ["Hek-Alzir", "Azad"],
   "La Grande Expédition": ["Jeron", "Sven", "Hedda", "Ival"],
-  "Cités Libres": ["Eelm", "Sibline", "Fized"],
-  Menaces: ["Bellocine-Ceneir", "Soldat-Danheran"],
+  "Cités Libres": ["Eelm", "Sibline", "Fized", "bedesta"],
+  Menaces: [
+    "droh-faroujl",
+    "Bellocine-Ceneir",
+    "Soldat-Danheran",
+    "helrun-eserone",
+    "meldiam",
+    "xevran",
+  ],
   Neash: ["Dleansh", "Jeash", "Nesh-Krenash", "Temosh-Neash"],
-  "Morts alias les Faibles": ["Borul"],
+  "Morts alias les Faibles": [
+    "Borul",
+    "Hetski",
+    "leovrin",
+    "saskilen",
+    "vladko",
+    "zilna-eserone",
+  ],
+  Aventures: ["guerrier-orc-orange", "mogregh"],
 };
 
 const Cards = styled.div`
