@@ -20,7 +20,7 @@ export default function Home() {
         </Head>
 
         <Intro>
-          <h1 className={styles.title}>Pour un petit plaisir atozien</h1>
+          <h1>Pour un petit plaisir atozien</h1>
           {/* <Link href="/cards">Les cartes</Link> */}
         </Intro>
 
