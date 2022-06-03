@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styled from "styled-components";
 import CardsComponent from "../components/cards.component";
 import Layout from "../components/layout";
@@ -19,6 +20,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        <Link href="/game">Jouer</Link>
         <Intro>
           <h1>Pour un petit plaisir atozien</h1>
           {/* <Link href="/cards">Les cartes</Link> */}
