@@ -28,7 +28,7 @@ const imagesByGroup = {
   Neash: ["Dleansh", "Jeash", "Nesh-Krenash", "Temosh-Neash"],
   "Morts alias les Faibles": [
     "Borul",
-    "Hetski",
+    "hetski",
     "leovrin",
     "saskilen",
     "vladko",
