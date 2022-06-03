@@ -22,12 +22,8 @@ export default function Home() {
 
         <Link href="/game">Jouer</Link>
         <Intro>
-<<<<<<< HEAD
           <h1>Pour un petit plaisir atozien</h1>
           {/* <Link href="/cards">Les cartes</Link> */}
-=======
-          <h1 className={styles.title}>Pour un petit plaisir atozien</h1>
->>>>>>> 8e9331f (Set the multiplayer)
         </Intro>
 
         <CardsComponent />
