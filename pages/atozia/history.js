@@ -1,10 +1,8 @@
 import styledComponents from "styled-components";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
 const HistoryWrapper = styledComponents.div`
     max-width: 80ch;
-  padding: 4rem 0;
-
 `;
 
 const Content = styledComponents.div`
@@ -19,7 +17,7 @@ export default function History() {
   return (
     <Layout>
       <HistoryWrapper>
-        <h1>L&lsquo;histoire du monde, par Karle</h1>
+        <h1>L&lsquo;histoire du monde par Karle</h1>
         <Content>
           <p>
             « Ce sera un récit dans les grandes lignes car il faut savoir que
@@ -135,7 +133,7 @@ export default function History() {
             Ainsi, chers auditeurs, les choses évoluèrent au rythme des
             conflits, des accords et autres événements oubliés de beaucoup. Puis
             vint ce qu&lsquo;on appelle la Guerre de Runn, du nom, paraît-il, du
-            palais où elle débuta. Cette fameuse grande guerre voulu par les
+            palais où elle débuta. Cette fameuse grande guerre voulu par les{" "}
             <SpecialWords>PACIFICATEURS</SpecialWords>. Les guerres, voyez-vous,
             avaient toujours été des guerres de domination, parfois de
             conquêtes, mais dans le respect de certaines choses. La Guerre de
@@ -217,7 +215,7 @@ export default function History() {
             ceux qui estimaient qu&lsquo;il y avait un lien.
           </p>
           <p>
-            Concernant les Orcs Blancs, vous devez connaître vos classiques. Les
+            Concernant les Orcs Blancs, vous devez connaître vos classiques. Les{" "}
             <SpecialWords>PACIFICATEURS</SpecialWords> réagirent à travers la
             divinité Atozienne et l&lsquo;avènement d&lsquo;Atozia. La guerre
             continua longuement et fut rude, mais cette arrivée des Dieux, de

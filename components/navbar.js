@@ -27,9 +27,9 @@ const NavBar = () => {
         </Link>
       </Item>
       <Item>
-        <Link href="/history">
-          <a className={router.pathname == "/history" ? "active" : ""}>
-            L&lsquo;histoire
+        <Link href="/atozia">
+          <a className={router.pathname.includes("/atozia") ? "active" : ""}>
+            Atozia
           </a>
         </Link>
       </Item>

@@ -7,11 +7,15 @@ const Container = styled.div`
   margin: 1rem auto 6rem;
 `;
 
+const Main = styled.main`
+  padding-top: 4rem;
+`;
+
 export default function Layout({ children }) {
   return (
     <Container>
       <NavBar />
-      <main>{children}</main>
+      <Main>{children}</Main>
     </Container>
   );
 }
