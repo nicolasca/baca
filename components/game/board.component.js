@@ -1,8 +1,19 @@
 import React from "react";
+import { PHASES } from "../../game/Game";
+import ChooseDeck from "./ChooseDeck/chooseDeck";
 
 export default function BacaBoard({ ctx, G, moves, playerID }) {
-  console.log(ctx);
-  console.log(playerID);
+  console.log(G);
 
-  return <div>Let's play</div>;
+  let boardToDisplay = "";
+
+  switch (ctx.phase) {
+    case PHASES.CHOOSE_DECK:
+      boardToDisplay = <ChooseDeck />;
+      break;
+    default:
+      boardToDisplay = "No phase !";
+  }
+  console.log(boardToDisplay);
+  return <div>{boardToDisplay}</div>;
 }
