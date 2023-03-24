@@ -12,7 +12,7 @@ const imagesByGroup = {
     { name: "Djekal", isDead: false },
     { name: "karle", isDead: false },
     { name: "Lerianne", isDead: true },
-    { name: "Dyzruna-Eserone", isDead: true },
+    { name: "Dyzruna-Eserone", isDead: false },
     { name: "Borul", isDead: true },
     { name: "hetski", isDead: true },
     { name: "leovrin", isDead: true },
@@ -20,6 +20,7 @@ const imagesByGroup = {
   ],
   Belloreks: [
     { name: "Hek-Alzir", isDead: false },
+    { name: "Shaadi", isDead: false },
     { name: "Azad", isDead: true },
   ],
   "La Grande Expédition": [

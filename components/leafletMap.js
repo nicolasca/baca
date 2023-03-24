@@ -15,6 +15,7 @@ import "leaflet/dist/leaflet.css";
         zoom={1}
         minZoom={-5}
         maxZoom={10}
+        maxBounds={bounds}
         scrollWheelZoom={true}
         attributionControl={false}
         crs={L.CRS.Simple}

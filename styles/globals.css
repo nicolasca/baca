@@ -22,5 +22,8 @@ a {
 
 
 .leaflet-container {
-  height: calc(100vh - 100px) !important;
+  height: calc(100vh - 60px) !important;
+  width: 100vw !important;
+  position: absolute !important;
+  left: 0;
 }
