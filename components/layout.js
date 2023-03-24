@@ -4,7 +4,7 @@ import NavBar from "./navbar";
 const Container = styled.div`
   max-width: 1200px;
   padding: 0 1rem;
-  margin: 1rem auto 6rem;
+  margin: auto;
 `;
 
 export default function Layout({ children }) {
