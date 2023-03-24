@@ -19,3 +19,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.leaflet-container {
+  height: calc(100vh - 60px) !important;
+  width: 100vw !important;
+  position: absolute !important;
+  left: 0;
+}

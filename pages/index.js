@@ -5,8 +5,7 @@ import Layout from "../components/layout";
 import styles from "../styles/Home.module.css";
 
 const Intro = styled.main`
-  padding: 4rem 0;
-  margin-bottom: 10rem;
+  padding: 2rem 0;
 `;
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
         </Head>
 
         <Intro>
-          <h1>Pour un petit plaisir atozien</h1>
           {/* <Link href="/cards">Les cartes</Link> */}
         </Intro>
 
