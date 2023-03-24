@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import styles from "../styles/Home.module.css";
 
 const Intro = styled.main`
-  padding: 4rem 0;
+  padding: 2rem 0;
   margin-bottom: 10rem;
 `;
 

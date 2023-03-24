@@ -33,6 +33,13 @@ const NavBar = () => {
           </a>
         </Link>
       </Item>
+      <Item>
+        <Link href="/sultanat">
+          <a className={router.pathname == "/sultanat" ? "active" : ""}>
+            Le Sultanat
+          </a>
+        </Link>
+      </Item>
     </Items>
   );
 };
