@@ -35,6 +35,13 @@ const NavBar = () => {
         </Link>
       </Item>
       <Item>
+        <Link href="/persos">
+          <a className={router.pathname == "/persos" ? "active" : ""}>
+            Les persos
+          </a>
+        </Link>
+      </Item>
+      <Item>
         <Link href="/history">
           <a className={router.pathname == "/history" ? "active" : ""}>
             L&lsquo;histoire

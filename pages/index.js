@@ -1,14 +1,21 @@
 import Head from "next/head";
+import { useGLTF, OrbitControls, Glitch } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { GlitchMode } from 'postprocessing'
 import styled from "styled-components";
-import CardsComponent from "../components/cards.component";
 import Layout from "../components/layout";
 import styles from "../styles/Home.module.css";
+import { GriffeModel } from "../components/GriffeModel";
 
 const Intro = styled.main`
+  width: 100%;
+  height: 80vh;
   padding: 2rem 0;
 `;
 
+
 export default function Home() {
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -19,10 +26,25 @@ export default function Home() {
         </Head>
 
         <Intro>
+          <Canvas camera={[-1, 0, 10]} width={'400px'} height={'400px'}>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <OrbitControls />
+            <Glitch
+    delay={[1.5, 3.5]} // min and max glitch delay
+    duration={[0.6, 1.0]} // min and max glitch duration
+    strength={[0.3, 1.0]} // min and max glitch strength
+    mode={GlitchMode.SPORADIC} // glitch mode
+    active // turn on/off the effect (switches between "mode" prop and GlitchMode.DISABLED)
+    ratio={0.85} // Threshold for strong glitches, 0 - no weak glitches, 1 - no strong glitches.
+  />
+
+           <GriffeModel />
+          </Canvas>
           {/* <Link href="/cards">Les cartes</Link> */}
         </Intro>
 
-        <CardsComponent />
+        
         <footer className={styles.footer}>Powered by Atozia Familly</footer>
       </div>
     </Layout>
