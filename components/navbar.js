@@ -19,7 +19,7 @@ const Item = styled.li`
   list-style-type: none;
 
   a.active {
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed #09b85e;
   }
 `;
 
@@ -28,41 +28,41 @@ const NavBar = () => {
   return (
     <NavbarWrapper>
 
-    <Items>
-      <Item>
-        <Link href="/">
-          <a className={router.pathname == "/" ? "active" : ""}>Les cartes</a>
-        </Link>
-      </Item>
-      <Item>
-        <Link href="/persos">
-          <a className={router.pathname == "/persos" ? "active" : ""}>
-            Les persos
-          </a>
-        </Link>
-      </Item>
-      <Item>
-        <Link href="/history">
-          <a className={router.pathname == "/history" ? "active" : ""}>
-            L&lsquo;histoire
-          </a>
-        </Link>
-      </Item>
-      <Item>
-        <Link href="/sultanat">
-          <a className={router.pathname == "/sultanat" ? "active" : ""}>
-            Le Sultanat
-          </a>
-        </Link>
-      </Item>
-      <Item>
-        <Link href="/map">
-          <a className={router.pathname == "/map" ? "active" : ""}>
-            La carte
-          </a>
-        </Link>
-      </Item>
-    </Items>
+      <Items>
+        <Item>
+          <Link href="/">
+            <a className={router.pathname == "/" ? "active" : ""}>Les cartes</a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="/persos">
+            <a className={router.pathname == "/persos" ? "active" : ""}>
+              Les persos
+            </a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="/histoires">
+            <a className={router.pathname.includes("/histoires") ? "active" : ""}>
+              Les histoires
+            </a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="/sultanat">
+            <a className={router.pathname == "/sultanat" ? "active" : ""}>
+              Le Sultanat
+            </a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="/map">
+            <a className={router.pathname == "/map" ? "active" : ""}>
+              La carte
+            </a>
+          </Link>
+        </Item>
+      </Items>
     </NavbarWrapper>
 
   );

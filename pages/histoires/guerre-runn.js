@@ -1,9 +1,10 @@
 import styledComponents from "styled-components";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
+import Head from "next/head";
 
 const HistoryWrapper = styledComponents.div`
     max-width: 80ch;
-  padding: 4rem 0;
+  padding: 2rem 0;
 
 `;
 
@@ -15,11 +16,15 @@ const SpecialWords = styledComponents.span`
     color: #F645A0
 `;
 
-export default function History() {
+export default function GuerreRunn() {
   return (
     <Layout>
+      <Head>
+        <title>La Guerre de Runn</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <HistoryWrapper>
-        <h1>L&lsquo;histoire du monde, par Karle</h1>
+        <h1>La Guerre de Runn, par Karle</h1>
         <Content>
           <p>
             « Ce sera un récit dans les grandes lignes car il faut savoir que
